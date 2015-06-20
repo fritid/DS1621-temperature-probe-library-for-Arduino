@@ -13,7 +13,7 @@ DS1621::DS1621(uint8_t i2c_addr) {
 // device ID and address
 #define DEV_TYPE   0x90 >> 1                    // shift required by wire.h
 #define DEV_ADDR   0x00                         // DS1621 address is 0
-#define SLAVE_ID   DEV_TYPE | DEV_ADDR
+#define SLAVE_ID   DEV_TYPE | addr
 
 // Set configuration register
 
